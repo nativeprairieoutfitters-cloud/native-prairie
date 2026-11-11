@@ -15,7 +15,10 @@
 html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
-  background: var(--paper);
+  background:
+    linear-gradient(rgba(250,246,236,.80), rgba(250,246,236,.80)),
+    url("assets-sunset-decoys-2021-01.jpg") center center / cover no-repeat fixed;
+  background-color: var(--paper);
   color: var(--ink);
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.65;
@@ -55,6 +58,12 @@ a { color: var(--green); }
 .hero h1 { color: var(--white); font-size: 2.3rem; margin-bottom: .4em; }
 .hero p { color: #e9e4d2; font-size: 1.12rem; max-width: 640px; }
 .hero .btn-row { margin-top: 1.4em; display: flex; flex-wrap: wrap; gap: 12px; }
+
+/* Hero photos (field photos by Steven Vaca, Nov 2026) */
+.hero-photo { background-size: cover; background-position: center; }
+.hero-foundation { background-image: linear-gradient(160deg, rgba(30,51,24,.80) 0%, rgba(46,75,37,.62) 70%, rgba(60,92,47,.45) 100%), url("assets-sunset-decoys-2021-01.jpg"); }
+.hero-outfitters { background-image: linear-gradient(160deg, rgba(30,51,24,.80) 0%, rgba(46,75,37,.62) 70%, rgba(60,92,47,.45) 100%), url("assets-geese-dusk-field-2025-12.jpg"); }
+.hero-gateway { background-image: linear-gradient(160deg, rgba(30,51,24,.80) 0%, rgba(46,75,37,.62) 70%, rgba(60,92,47,.45) 100%), url("assets-sunset-decoys-2021-01.jpg"); }
 
 /* Sections */
 .section { padding: 40px 0; }
