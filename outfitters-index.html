@@ -7,15 +7,17 @@
   <meta name="description" content="Native Prairie Outfitters LLC: professional guided waterfowl, turkey, archery deer, and dove hunts on private leased ground in Missouri, Kansas, and Iowa. ADA-accessible.">
   <link rel="stylesheet" href="assets-styles.css">
 </head>
-<body>
+<body id="top">
 
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="outfitters-index.html">Native Prairie <span>Outfitters LLC</span></a>
-      <nav class="nav" aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">&#9776;</button>
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
         <a href="outfitters-index.html" aria-current="page">Home</a>
         <a href="outfitters-hunts.html">Hunts</a>
         <a href="outfitters-contact.html">Contact</a>
+      <a href="foundation-index.html">Foundation</a>
       </nav>
     </div>
   </header>
@@ -109,5 +111,7 @@
     </div>
   </footer>
 
+<a href="#top" class="to-top" aria-label="Back to top">&uarr;</a>
+<script src="assets-nav.js"></script>
 </body>
 </html>

@@ -7,10 +7,17 @@
   <meta name="description" content="Native Prairie: the Native Prairie Veterans Foundation (501c3 nonprofit) and Native Prairie Outfitters LLC (guided hunting) — two separate organizations, one prairie home.">
   <link rel="stylesheet" href="assets-styles.css">
 </head>
-<body>
+<body id="top">
 <header class="site-header">
   <div class="container header-inner">
     <a class="brand" href="index.html">Native Prairie</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">&#9776;</button>
+    <nav class="nav" id="main-nav" aria-label="Main navigation">
+      <a href="foundation-index.html">Foundation</a>
+      <a href="outfitters-index.html">Outfitters</a>
+      <a href="foundation-ways-to-give.html" class="nav-donate">Ways to Give</a>
+      <a href="foundation-contact.html">Contact</a>
+      </nav>
   </div>
 </header>
 <main>
@@ -53,5 +60,7 @@
     <p><a href="https://www.facebook.com/profile.php?id=61589730527720">Follow us on Facebook</a></p>
   </div>
 </footer>
+<a href="#top" class="to-top" aria-label="Back to top">&uarr;</a>
+<script src="assets-nav.js"></script>
 </body>
 </html>

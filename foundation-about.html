@@ -7,18 +7,20 @@
   <meta name="description" content="About Native Prairie Veterans Foundation: a Missouri 501(c)(3) nonprofit founded by Steven Vaca, providing fully funded outdoor fellowships.">
   <link rel="stylesheet" href="assets-styles.css">
 </head>
-<body>
+<body id="top">
 
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="foundation-index.html">Native Prairie <span>Veterans Foundation</span></a>
-      <nav class="nav" aria-label="Main navigation">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">&#9776;</button>
+      <nav class="nav" id="main-nav" aria-label="Main navigation">
         <a href="foundation-index.html">Home</a>
         <a href="foundation-about.html" aria-current="page">About</a>
         <a href="foundation-programs.html">Programs</a>
         <a href="foundation-faq.html">FAQ</a>
         <a href="foundation-ways-to-give.html" class="nav-donate">Ways to Give</a>
         <a href="foundation-contact.html">Contact</a>
+      <a href="outfitters-index.html">Outfitters</a>
       </nav>
     </div>
   </header>
@@ -82,5 +84,7 @@
   </footer>
   
 
+<a href="#top" class="to-top" aria-label="Back to top">&uarr;</a>
+<script src="assets-nav.js"></script>
 </body>
 </html>

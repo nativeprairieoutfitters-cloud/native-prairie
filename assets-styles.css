@@ -16,7 +16,7 @@ html { -webkit-text-size-adjust: 100%; }
 body {
   margin: 0;
   background:
-    linear-gradient(rgba(250,246,236,.80), rgba(250,246,236,.80)),
+    linear-gradient(rgba(250,246,236,.55), rgba(250,246,236,.55)),
     url("assets-sunset-decoys-2021-01.jpg") center center / cover no-repeat fixed;
   background-color: var(--paper);
   color: var(--ink);
@@ -47,6 +47,20 @@ a { color: var(--green); }
 .nav-donate { background: var(--gold); color: var(--green-dark) !important; font-weight: 700; padding: 6px 14px !important; border-radius: 4px; }
 .nav-donate:hover { background: var(--gold-soft); }
 
+/* Hamburger toggle (mobile only, shown in the media query below) */
+.nav-toggle { display: none; }
+
+/* Floating back-to-top button */
+.to-top {
+  position: fixed; right: 18px; bottom: 18px; z-index: 50;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 46px; height: 46px; border-radius: 50%;
+  background: var(--gold); color: var(--green-dark);
+  font-size: 1.4rem; font-weight: 800; text-decoration: none;
+  box-shadow: 0 2px 8px rgba(0,0,0,.3);
+}
+.to-top:hover { background: var(--gold-soft); }
+
 /* Hero */
 .hero {
   background:
@@ -67,7 +81,7 @@ a { color: var(--green); }
 
 /* Sections */
 .section { padding: 40px 0; }
-.section.alt { background: var(--paper-deep); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.section.alt { background: rgba(243,236,220,.75); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
 
 /* Buttons */
 .btn {
@@ -83,12 +97,12 @@ a { color: var(--green); }
 .btn-row { display: flex; flex-wrap: wrap; gap: 12px; margin: 1.2em 0; }
 
 /* Content blocks */
-.detail-block { background: var(--white); border: 1px solid var(--line); border-left: 5px solid var(--gold); border-radius: 4px; padding: 18px 22px; margin: 1.6em 0; }
+.detail-block { background: rgba(255,253,248,.85); border: 1px solid var(--line); border-left: 5px solid var(--gold); border-radius: 4px; padding: 18px 22px; margin: 1.6em 0; }
 .check-list { list-style: none; padding: 0; }
 .check-list li { padding: 6px 0 6px 30px; position: relative; }
 .check-list li::before { content: "✓"; position: absolute; left: 4px; color: var(--green); font-weight: 700; }
 .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; margin: 1.6em 0; }
-.card { background: var(--white); border: 1px solid var(--line); border-radius: 6px; padding: 22px; }
+.card { background: rgba(255,253,248,.85); border: 1px solid var(--line); border-radius: 6px; padding: 22px; }
 .card h3 { margin-top: 0; }
 .card .price { font-family: Arial, Helvetica, sans-serif; font-size: 1.6rem; color: var(--green); font-weight: 800; }
 
@@ -103,7 +117,7 @@ a { color: var(--green); }
 .gateway-card:hover { transform: translateY(-2px); }
 
 /* FAQ */
-.faq-item { background: var(--white); border: 1px solid var(--line); border-radius: 6px; padding: 18px 22px; margin: 0 0 14px; }
+.faq-item { background: rgba(255,253,248,.85); border: 1px solid var(--line); border-radius: 6px; padding: 18px 22px; margin: 0 0 14px; }
 .faq-item h3 { margin: 0 0 .4em; }
 .faq-item p:last-child { margin-bottom: 0; }
 
@@ -132,5 +146,15 @@ a { color: var(--green); }
   h1 { font-size: 1.6rem; }
   .hero { padding: 44px 0 40px; }
   .hero h1 { font-size: 1.8rem; }
-  .nav { gap: 4px 12px; }
+  .header-inner { flex-wrap: nowrap; }
+  .nav-toggle {
+    display: inline-block; margin-left: auto; flex-shrink: 0;
+    background: none; border: 1px solid rgba(255,255,255,.5);
+    color: var(--white); font-size: 1.4rem; line-height: 1;
+    padding: 6px 10px; border-radius: 4px; cursor: pointer;
+  }
+  .nav { display: none; flex-direction: column; width: 100%; gap: 2px; padding: 8px 0 4px; }
+  .site-header.nav-open .nav { display: flex; }
+  .nav a { padding: 8px 2px; }
+  .nav-donate { align-self: flex-start; }
 }
