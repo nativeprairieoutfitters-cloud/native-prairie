@@ -31,7 +31,7 @@ h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .6em; color: var(--green-dar
 h2 { font-size: 1.35rem; color: var(--green); margin: 1.8em 0 .5em; }
 h3 { font-size: 1.1rem; color: var(--green); margin: 1.4em 0 .4em; }
 p { margin: 0 0 1em; }
-a { color: var(--green); }
+a { color: var(--green); overflow-wrap: break-word; }
 img { max-width: 100%; height: auto; }
 .container { max-width: 960px; margin: 0 auto; padding: 0 20px; }
 .lede { font-size: 1.15rem; color: var(--ink-soft); }
@@ -125,7 +125,7 @@ img { max-width: 100%; height: auto; }
 /* Media */
 .figure { margin: 1.8em 0; text-align: center; }
 .figure img { max-width: 100%; height: auto; border-radius: 6px; border: 1px solid var(--line); }
-.figure.wide img { max-width: 720px; }
+.figure.wide img { width: 100%; max-width: 720px; height: auto; }
 .caption { font-size: .9rem; color: var(--ink-soft); margin-top: .5em; }
 
 /* Footer */
