@@ -149,11 +149,36 @@ img { max-width: 100%; height: auto; }
 .sponsor-card p { text-align: left; }
 .sponsor-card p:last-child { margin-bottom: 0; }
 
+/* Sponsor grid — dark tile layout, Nov 2026 (onX Elite style) */
+.sponsor-grid-section { background: #141414; padding: 40px 0; }
+.sponsor-grid-section h2 { color: #fff; margin-top: 0; }
+.sponsor-grid-section .lede { color: #cfcfcf; }
+.sponsor-grid-section .caption { color: #cfcfcf; }
+.sponsor-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px 18px; margin: 1.6em 0; }
+.sponsor-tile .tile {
+  background: #fff; border-radius: 12px; aspect-ratio: 1 / 1;
+  display: flex; align-items: center; justify-content: center; padding: 20px;
+}
+.sponsor-tile .tile img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.sponsor-tile .tile .tile-wordmark {
+  font-family: Arial, Helvetica, sans-serif; font-weight: 800;
+  font-size: 1.3rem; color: #1a1a1a; text-align: center; line-height: 1.25;
+}
+.sponsor-tile h3 { color: #fff; margin: .7em 0 .2em; font-size: 1.05rem; }
+.sponsor-tile p { color: #bdbdbd; font-size: .95rem; margin: 0 0 .4em; }
+.sponsor-tile p:last-child { margin-bottom: 0; }
+.sponsor-tile a { color: var(--gold-soft); }
+
 @media (max-width: 640px) {
   body { font-size: 16px; }
   h1 { font-size: 1.6rem; }
   .hero { padding: 44px 0 40px; }
   .hero h1 { font-size: 1.8rem; }
+  .sponsor-grid { gap: 16px 10px; }
+  .sponsor-tile .tile { padding: 10px; border-radius: 8px; }
+  .sponsor-tile .tile .tile-wordmark { font-size: .82rem; }
+  .sponsor-tile h3 { font-size: .85rem; }
+  .sponsor-tile p { font-size: .78rem; }
   .header-inner { flex-wrap: nowrap; }
   .nav-toggle {
     display: inline-block; margin-left: auto; flex-shrink: 0;
