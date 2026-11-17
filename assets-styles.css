@@ -160,6 +160,7 @@ img { max-width: 100%; height: auto; }
   display: flex; align-items: center; justify-content: center; padding: 20px;
 }
 .sponsor-tile .tile img { max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.sponsor-tile .tile-dark { background: var(--green-dark); }
 .sponsor-tile .tile .tile-wordmark {
   font-family: Arial, Helvetica, sans-serif; font-weight: 800;
   font-size: 1.3rem; color: #1a1a1a; text-align: center; line-height: 1.25;
